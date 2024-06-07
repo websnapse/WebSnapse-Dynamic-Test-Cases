@@ -1,0 +1,672 @@
+{
+  "neurons": [
+    {
+      "id": "ISP",
+      "type": "input",
+      "content": "000000000000111112121122211212221222",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "OSP",
+      "type": "output",
+      "content": "",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "in",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^2\\to a^2",
+        "a\\to a"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "d_0",
+      "type": "regular",
+      "content": "4",
+      "rules": [
+        "a^4/a^3\\to a^3;8",
+        "a\\to a;23"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "0",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^2\\to\\lambda",
+        "\\left[a\\right]\\to\\left[\\right]_{t_1}\\left|\\right|\\left[\\right]_{f_1}"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "1",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a\\to a",
+        "a^2\\to a^2"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "2",
+      "type": "regular",
+      "content": "2",
+      "rules": [
+        "a\\to a",
+        "a^2\\to a^2",
+        "a^3\\to\\lambda",
+        "a^4\\to a"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "3",
+      "type": "regular",
+      "content": "7",
+      "rules": [
+        "a^7/a^2\\to a^2;3",
+        "a^5/a^2\\to a^2;5",
+        "a^3\\to a^3;26"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "4",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "a^2\\to\\lambda",
+        "a^3\\to a;1",
+        "a^6\\to a^2;1"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "b_1",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "\\left[a^2\\right]\\to\\left[\\right]_{d_1}\\left|\\right|\\left[\\right]_{b_2}"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "e_1",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "\\left[a^2\\right]\\to\\left[\\right]_{Cx_1}\\left|\\right|\\left[\\right]_{e_2}"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "g_1",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "\\left[a^2\\right]\\to\\left[\\right]_{h_1}\\left|\\right|\\left[\\right]_{g_2}"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "out",
+      "type": "regular",
+      "content": "0",
+      "rules": [
+        "\\left(a^2\\right)^+/a\\to a"
+      ],
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "synapses": [
+    {
+      "from": "ISP",
+      "to": "in",
+      "weight": 1
+    },
+    {
+      "from": "out",
+      "to": "OSP",
+      "weight": 1
+    },
+    {
+      "from": "1",
+      "to": "b_1",
+      "weight": 1
+    },
+    {
+      "from": "1",
+      "to": "e_1",
+      "weight": 1
+    },
+    {
+      "from": "1",
+      "to": "g_1",
+      "weight": 1
+    },
+    {
+      "from": "1",
+      "to": "2",
+      "weight": 1
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "weight": 1
+    },
+    {
+      "from": "4",
+      "to": "0",
+      "weight": 1
+    },
+    {
+      "from": "0",
+      "to": "out",
+      "weight": 1
+    },
+    {
+      "from": "1",
+      "to": "0",
+      "weight": 1
+    },
+    {
+      "from": "2",
+      "to": "1",
+      "weight": 1
+    },
+    {
+      "from": "3",
+      "to": "2",
+      "weight": 1
+    },
+    {
+      "from": "d_3",
+      "to": "d_1",
+      "weight": 1
+    },
+    {
+      "from": "d_3",
+      "to": "4",
+      "weight": 1
+    },
+    {
+      "from": "d_0",
+      "to": "d_1",
+      "weight": 1
+    },
+    {
+      "from": "d_1",
+      "to": "d_2",
+      "weight": 1
+    },
+    {
+      "from": "d_2",
+      "to": "d_3",
+      "weight": 1
+    },
+    {
+      "from": "in",
+      "to": "Cx_1",
+      "weight": 1
+    },
+    {
+      "from": "in",
+      "to": "Cx_2",
+      "weight": 1
+    },
+    {
+      "from": "in",
+      "to": "Cx_3",
+      "weight": 1
+    },
+    {
+      "from": "d_1",
+      "to": "Cx_1",
+      "weight": 1
+    },
+    {
+      "from": "d_2",
+      "to": "Cx_2",
+      "weight": 1
+    },
+    {
+      "from": "d_3",
+      "to": "Cx_3",
+      "weight": 1
+    },
+    {
+      "from": "Cx_1",
+      "to": "h_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_2",
+      "to": "h_2",
+      "weight": 1
+    },
+    {
+      "from": "Cx_3",
+      "to": "h_3",
+      "weight": 1
+    },
+    {
+      "from": "Cx_11",
+      "to": "t_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_21",
+      "to": "t_2t_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_21",
+      "to": "t_2f_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_31",
+      "to": "t_3t_2t_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_31",
+      "to": "t_3f_2t_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_31",
+      "to": "t_3t_2f_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_31",
+      "to": "t_3f_2f_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_10",
+      "to": "f_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_20",
+      "to": "f_2t_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_20",
+      "to": "f_2f_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_30",
+      "to": "f_3t_2t_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_30",
+      "to": "f_3f_2t_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_30",
+      "to": "f_3t_2f_1",
+      "weight": 1
+    },
+    {
+      "from": "Cx_30",
+      "to": "f_3f_2f_1",
+      "weight": 1
+    }
+  ],
+  "rule_dict": [
+    "\\left[a^2\\right]_{b_1}\\to\\left[\\right]_{d_1}\\left|\\right|\\left[\\right]_{b_2}",
+    "\\left[a^2\\right]_{b_2}\\to\\left[\\right]_{d_2}\\left|\\right|\\left[\\right]_{d_3}",
+    "\\left[a^2\\right]_{e_1}\\to\\left[\\right]_{Cx_1}\\left|\\right|\\left[\\right]_{e_2}",
+    "\\left[a^2\\right]_{e_2}\\to\\left[\\right]_{Cx_2}\\left|\\right|\\left[\\right]_{Cx_3}",
+    "\\left[a^2\\right]_{g_1}\\to\\left[\\right]_{h_1}\\left|\\right|\\left[\\right]_{g_2}",
+    "\\left[a^2\\right]_{g_2}\\to\\left[\\right]_{h_2}\\left|\\right|\\left[\\right]_{h_3}",
+    "\\left[a^2\\right]_{h_1}\\to\\left[\\right]_{Cx_11}\\left|\\right|\\left[\\right]_{Cx_10}",
+    "\\left[a^2\\right]_{h_2}\\to\\left[\\right]_{Cx_21}\\left|\\right|\\left[\\right]_{Cx_20}",
+    "\\left[a^2\\right]_{h_3}\\to\\left[\\right]_{Cx_31}\\left|\\right|\\left[\\right]_{Cx_30}",
+    "\\left[a\\to\\lambda \\right]_{d_1}",
+    "\\left[a^2\\to\\lambda \\right]_{d_1}",
+    "\\left[a\\to\\lambda \\right]_{d_2}",
+    "\\left[a^2\\to\\lambda \\right]_{d_2}",
+    "\\left[a\\to\\lambda \\right]_{d_3}",
+    "\\left[a^2\\to\\lambda \\right]_{d_3}",
+    "\\left[a\\to\\lambda \\right]_{Cx_1}",
+    "\\left[a^2\\to\\lambda \\right]_{Cx_1}",
+    "\\left[a\\to\\lambda \\right]_{Cx_2}",
+    "\\left[a^2\\to\\lambda \\right]_{Cx_2}",
+    "\\left[a\\to\\lambda \\right]_{Cx_3}",
+    "\\left[a^2\\to\\lambda \\right]_{Cx_3}",
+    "\\left[a\\to\\lambda \\right]_{Cx_11}",
+    "\\left[a^2\\to\\lambda \\right]_{Cx_11}",
+    "\\left[a\\to\\lambda \\right]_{Cx_21}",
+    "\\left[a^2\\to\\lambda \\right]_{Cx_21}",
+    "\\left[a\\to\\lambda \\right]_{Cx_31}",
+    "\\left[a^2\\to\\lambda \\right]_{Cx_31}",
+    "\\left[a\\to\\lambda \\right]_{Cx_10}",
+    "\\left[a^2\\to\\lambda \\right]_{Cx_10}",
+    "\\left[a\\to\\lambda \\right]_{Cx_20}",
+    "\\left[a^2\\to\\lambda \\right]_{Cx_20}",
+    "\\left[a\\to\\lambda \\right]_{Cx_30}",
+    "\\left[a^2\\to\\lambda \\right]_{Cx_30}",
+    "\\left[a\\to a \\right]_{1}",
+    "\\left[a\\to a \\right]_{2}",
+    "\\left[a^2\\to a^2 \\right]_{1}",
+    "\\left[a^2\\to a^2 \\right]_{2}",
+    "\\left[a^3\\to\\lambda \\right]_{2}",
+    "\\left[a^4\\to a \\right]_{2}",
+    "\\left[a^7/a^2\\to a^2;3 \\right]_{3}",
+    "\\left[a^5/a^2\\to a^2;5 \\right]_{3}",
+    "\\left[a^2\\to\\lambda \\right]_{4}",
+    "\\left[a^2\\to\\lambda \\right]_{0}",
+    "\\left[a\\right]_{0}\\to\\left[\\right]_{t_1}\\left|\\right|\\left[\\right]_{f_1}",
+    "\\left[a\\right]_{t_1}\\to\\left[\\right]_{t_2t_1}\\left|\\right|\\left[\\right]_{f_2t_1}",
+    "\\left[a\\right]_{t_2t_1}\\to\\left[\\right]_{t_3t_2t_1}\\left|\\right|\\left[\\right]_{f_3t_2t_1}",
+    "\\left[a\\right]_{t_2f_1}\\to\\left[\\right]_{t_3t_2f_1}\\left|\\right|\\left[\\right]_{f_3t_2f_1}",
+    "\\left[a\\right]_{f_1}\\to\\left[\\right]_{t_2f_1}\\left|\\right|\\left[\\right]_{f_2f_1}",
+    "\\left[a\\right]_{f_2t_1}\\to\\left[\\right]_{t_3f_2t_1}\\left|\\right|\\left[\\right]_{f_3f_2t_1}",
+    "\\left[a\\right]_{f_2f_1}\\to\\left[\\right]_{t_3f_2f_1}\\left|\\right|\\left[\\right]_{f_3f_2f_1}",
+    "\\left[a\\to a \\right]_{in}",
+    "\\left[a^2\\to a^2 \\right]_{in}",
+    "\\left[a^4/a^3\\to a^3;12 \\right]_{d_0}",
+    "\\left[a\\to a;23 \\right]_{d_0}",
+    "\\left[a^3\\to a^3 \\right]_{d_1}",
+    "\\left[a^3\\to a^3 \\right]_{d_2}",
+    "\\left[a^3\\to a^3 \\right]_{d_3}",
+    "\\left[a^4\\to\\lambda \\right]_{d_1}",
+    "\\left[a^3\\to\\lambda \\right]_{Cx_1}",
+    "\\left[a^4\\to a^4;2 \\right]_{Cx_1}",
+    "\\left[a^5\\to a^5;2 \\right]_{Cx_1}",
+    "\\left[a^3\\to\\lambda \\right]_{Cx_2}",
+    "\\left[a^4\\to a^4;1 \\right]_{Cx_2}",
+    "\\left[a^5\\to a^5;1 \\right]_{Cx_2}",
+    "\\left[a^3\\to\\lambda \\right]_{Cx_3}",
+    "\\left[a^4\\to a^4;0 \\right]_{Cx_3}",
+    "\\left[a^5\\to a^5;0 \\right]_{Cx_3}",
+    "\\left[a^4\\to a^3 \\right]_{Cx_11}",
+    "\\left[a^5\\to\\lambda \\right]_{Cx_11}",
+    "\\left[a^4\\to a^3 \\right]_{Cx_21}",
+    "\\left[a^5\\to\\lambda \\right]_{Cx_21}",
+    "\\left[a^4\\to a^3 \\right]_{Cx_31}",
+    "\\left[a^5\\to\\lambda \\right]_{Cx_31}",
+    "\\left[a^4\\to\\lambda \\right]_{Cx_10}",
+    "\\left[a^5\\to a^3 \\right]_{Cx_10}",
+    "\\left[a^4\\to\\lambda \\right]_{Cx_20}",
+    "\\left[a^5\\to a^3 \\right]_{Cx_20}",
+    "\\left[a^4\\to\\lambda \\right]_{Cx_30}",
+    "\\left[a^5\\to a^3 \\right]_{Cx_30}",
+    "\\left[a^3\\to a^3;26 \\right]_{3}",
+    "\\left[a^3\\to a;1 \\right]_{4}",
+    "\\left[a^6\\to a^2;1 \\right]_{4}",
+    "\\left[a\\right]_{t_3t_2t_1}\\to\\left[\\right]_{t_4t_3t_2t_1}\\left|\\right|\\left[\\right]_{f_4t_3t_2t_1}",
+    "\\left[a\\right]_{t_3f_2t_1}\\to\\left[\\right]_{t_4t_3f_2t_1}\\left|\\right|\\left[\\right]_{f_4t_3f_2t_1}",
+    "\\left[a\\right]_{t_3t_2f_1}\\to\\left[\\right]_{t_4t_3t_2f_1}\\left|\\right|\\left[\\right]_{f_4t_3t_2f_1}",
+    "\\left[a\\right]_{t_3f_2f_1}\\to\\left[\\right]_{t_4t_3f_2f_1}\\left|\\right|\\left[\\right]_{f_4t_3f_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_2t_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{t_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_2t_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{t_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_2t_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{t_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_2f_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{t_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_2f_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{t_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_2f_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{t_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_3t_2t_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{t_3t_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_3t_2t_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{t_3t_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_3t_2t_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{t_3t_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_3f_2t_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{t_3f_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_3f_2t_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{t_3f_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_3f_2t_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{t_3f_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_3t_2f_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{t_3t_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_3t_2f_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{t_3t_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_3t_2f_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{t_3t_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_3f_2f_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{t_3f_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_3f_2f_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{t_3f_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_3f_2f_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{t_3f_2f_1}",
+    "\\left[a\\right]_{f_3t_2t_1}\\to\\left[\\right]_{t_4f_3t_2t_1}\\left|\\right|\\left[\\right]_{f_4f_3t_2t_1}",
+    "\\left[a\\right]_{f_3f_2t_1}\\to\\left[\\right]_{t_4f_3f_2t_1}\\left|\\right|\\left[\\right]_{f_4f_3f_2t_1}",
+    "\\left[a\\right]_{f_3t_2f_1}\\to\\left[\\right]_{t_4f_3t_2f_1}\\left|\\right|\\left[\\right]_{f_4f_3t_2f_1}",
+    "\\left[a\\right]_{f_3f_2f_1}\\to\\left[\\right]_{t_4f_3f_2f_1}\\left|\\right|\\left[\\right]_{f_4f_3f_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_2t_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{f_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_2t_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{f_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_2t_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{f_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_2f_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{f_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_2f_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{f_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_2f_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{f_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_3t_2t_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{f_3t_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_3t_2t_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{f_3t_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_3t_2t_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{f_3t_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_3f_2t_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{f_3f_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_3f_2t_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{f_3f_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_3f_2t_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{f_3f_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_3t_2f_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{f_3t_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_3t_2f_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{f_3t_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_3t_2f_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{f_3t_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_3f_2f_1}",
+    "\\left[a^{5}/a^2\\to a^2 \\right]_{f_3f_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_3f_2f_1}",
+    "\\left[a^{8}/a^2\\to a^2 \\right]_{f_3f_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_3f_2f_1}",
+    "\\left[a^{11}/a^2\\to a^2 \\right]_{f_3f_2f_1}",
+    "\\left[a\\to\\lambda \\right]_{t_4t_3t_2t_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{t_4t_3t_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_4t_3t_2t_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{t_4t_3t_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_4t_3t_2t_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{t_4t_3t_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_4t_3t_2t_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{t_4t_3t_2t_1}",
+    "\\left[a\\to\\lambda \\right]_{t_4f_3t_2t_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{t_4f_3t_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_4f_3t_2t_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{t_4f_3t_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_4f_3t_2t_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{t_4f_3t_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_4f_3t_2t_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{t_4f_3t_2t_1}",
+    "\\left[a\\to\\lambda \\right]_{t_4t_3f_2t_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{t_4t_3f_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_4t_3f_2t_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{t_4t_3f_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_4t_3f_2t_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{t_4t_3f_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_4t_3f_2t_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{t_4t_3f_2t_1}",
+    "\\left[a\\to\\lambda \\right]_{t_4f_3f_2t_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{t_4f_3f_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_4f_3f_2t_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{t_4f_3f_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_4f_3f_2t_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{t_4f_3f_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_4f_3f_2t_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{t_4f_3f_2t_1}",
+    "\\left[a\\to\\lambda \\right]_{t_4t_3t_2f_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{t_4t_3t_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_4t_3t_2f_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{t_4t_3t_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_4t_3t_2f_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{t_4t_3t_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_4t_3t_2f_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{t_4t_3t_2f_1}",
+    "\\left[a\\to\\lambda \\right]_{t_4f_3t_2f_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{t_4f_3t_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_4f_3t_2f_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{t_4f_3t_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_4f_3t_2f_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{t_4f_3t_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_4f_3t_2f_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{t_4f_3t_2f_1}",
+    "\\left[a\\to\\lambda \\right]_{t_4t_3f_2f_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{t_4t_3f_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_4t_3f_2f_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{t_4t_3f_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_4t_3f_2f_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{t_4t_3f_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_4t_3f_2f_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{t_4t_3f_2f_1}",
+    "\\left[a\\to\\lambda \\right]_{t_4f_3f_2f_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{t_4f_3f_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{t_4f_3f_2f_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{t_4f_3f_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{t_4f_3f_2f_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{t_4f_3f_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{t_4f_3f_2f_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{t_4f_3f_2f_1}",
+    "\\left[a\\to\\lambda \\right]_{f_4t_3t_2t_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{f_4t_3t_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_4t_3t_2t_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{f_4t_3t_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_4t_3t_2t_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{f_4t_3t_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_4t_3t_2t_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{f_4t_3t_2t_1}",
+    "\\left[a\\to\\lambda \\right]_{f_4f_3t_2t_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{f_4f_3t_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_4f_3t_2t_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{f_4f_3t_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_4f_3t_2t_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{f_4f_3t_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_4f_3t_2t_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{f_4f_3t_2t_1}",
+    "\\left[a\\to\\lambda \\right]_{f_4t_3f_2t_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{f_4t_3f_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_4t_3f_2t_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{f_4t_3f_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_4t_3f_2t_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{f_4t_3f_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_4t_3f_2t_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{f_4t_3f_2t_1}",
+    "\\left[a\\to\\lambda \\right]_{f_4f_3f_2t_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{f_4f_3f_2t_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_4f_3f_2t_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{f_4f_3f_2t_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_4f_3f_2t_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{f_4f_3f_2t_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_4f_3f_2t_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{f_4f_3f_2t_1}",
+    "\\left[a\\to\\lambda \\right]_{f_4t_3t_2f_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{f_4t_3t_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_4t_3t_2f_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{f_4t_3t_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_4t_3t_2f_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{f_4t_3t_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_4t_3t_2f_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{f_4t_3t_2f_1}",
+    "\\left[a\\to\\lambda \\right]_{f_4f_3t_2f_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{f_4f_3t_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_4f_3t_2f_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{f_4f_3t_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_4f_3t_2f_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{f_4f_3t_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_4f_3t_2f_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{f_4f_3t_2f_1}",
+    "\\left[a\\to\\lambda \\right]_{f_4t_3f_2f_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{f_4t_3f_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_4t_3f_2f_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{f_4t_3f_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_4t_3f_2f_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{f_4t_3f_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_4t_3f_2f_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{f_4t_3f_2f_1}",
+    "\\left[a\\to\\lambda \\right]_{f_4f_3f_2f_1}",
+    "\\left[a^{2}\\to\\lambda \\right]_{f_4f_3f_2f_1}",
+    "\\left[a^{4}\\to\\lambda \\right]_{f_4f_3f_2f_1}",
+    "\\left[a^{5}\\to\\lambda \\right]_{f_4f_3f_2f_1}",
+    "\\left[a^{7}\\to\\lambda \\right]_{f_4f_3f_2f_1}",
+    "\\left[a^{8}\\to\\lambda \\right]_{f_4f_3f_2f_1}",
+    "\\left[a^{10}\\to\\lambda \\right]_{f_4f_3f_2f_1}",
+    "\\left[a^{11}\\to\\lambda \\right]_{f_4f_3f_2f_1}",
+    "\\left[\\left(a^2\\right)^+/a\\to a \\right]_{out}"
+  ]
+}

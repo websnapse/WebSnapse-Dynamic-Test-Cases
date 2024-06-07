@@ -1,0 +1,49 @@
+{
+  "neurons": [
+    {
+      "id": "in",
+      "type": "input",
+      "content": "11",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "div",
+      "content": 0,
+      "rules": [],
+      "type": "regular",
+      "position": {
+        "x": 250,
+        "y": 0
+      }
+    },
+    {
+      "id": "out",
+      "type": "output",
+      "content": "",
+      "position": {
+        "x": 500,
+        "y": 0
+      }
+    }
+  ],
+  "synapses": [
+    {
+      "from": "in",
+      "to": "div",
+      "weight": 1
+    },
+    {
+      "from": "div",
+      "to": "out",
+      "weight": 1
+    }
+  ],
+  "rule_dict": [
+    "\\left[a\\right]_{div}\\to\\left[\\right]_{X22BGU}\\left|\\right|\\left[\\right]_{PWWWD4}",
+    "\\left[a\\right]_{X22BGU}\\to\\left[\\right]_{34918Z}\\left|\\right|\\left[\\right]_{1FLV39}",
+    "\\left[a\\right]_{PWWWD4}\\to\\left[\\right]_{QWIX3P}\\left|\\right|\\left[\\right]_{EWNQCV}"
+  ]
+}

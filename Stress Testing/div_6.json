@@ -1,0 +1,109 @@
+{
+  "neurons": [
+    {
+      "id": "in",
+      "type": "input",
+      "content": "111111",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "div",
+      "content": 0,
+      "rules": [],
+      "type": "regular",
+      "position": {
+        "x": 250,
+        "y": 0
+      }
+    },
+    {
+      "id": "out",
+      "type": "output",
+      "content": "",
+      "position": {
+        "x": 500,
+        "y": 0
+      }
+    }
+  ],
+  "synapses": [
+    {
+      "from": "in",
+      "to": "div",
+      "weight": 1
+    },
+    {
+      "from": "div",
+      "to": "out",
+      "weight": 1
+    }
+  ],
+  "rule_dict": [
+    "\\left[a\\right]_{div}\\to\\left[\\right]_{1SWTAQ}\\left|\\right|\\left[\\right]_{BHGW6V}",
+    "\\left[a\\right]_{1SWTAQ}\\to\\left[\\right]_{2MLHU9}\\left|\\right|\\left[\\right]_{UIOFS3}",
+    "\\left[a\\right]_{2MLHU9}\\to\\left[\\right]_{I84SCU}\\left|\\right|\\left[\\right]_{J4OERL}",
+    "\\left[a\\right]_{I84SCU}\\to\\left[\\right]_{C7R7HT}\\left|\\right|\\left[\\right]_{LAASDN}",
+    "\\left[a\\right]_{C7R7HT}\\to\\left[\\right]_{WL25NB}\\left|\\right|\\left[\\right]_{T79FO5}",
+    "\\left[a\\right]_{WL25NB}\\to\\left[\\right]_{8ZATVM}\\left|\\right|\\left[\\right]_{LEC6N0}",
+    "\\left[a\\right]_{T79FO5}\\to\\left[\\right]_{UUAYX5}\\left|\\right|\\left[\\right]_{3YCN7W}",
+    "\\left[a\\right]_{LAASDN}\\to\\left[\\right]_{TR40NX}\\left|\\right|\\left[\\right]_{G8T7K2}",
+    "\\left[a\\right]_{TR40NX}\\to\\left[\\right]_{7KIBTN}\\left|\\right|\\left[\\right]_{UPM9AC}",
+    "\\left[a\\right]_{G8T7K2}\\to\\left[\\right]_{XGLDON}\\left|\\right|\\left[\\right]_{F0FHMN}",
+    "\\left[a\\right]_{J4OERL}\\to\\left[\\right]_{LHX807}\\left|\\right|\\left[\\right]_{1URL0U}",
+    "\\left[a\\right]_{LHX807}\\to\\left[\\right]_{JJILE0}\\left|\\right|\\left[\\right]_{MRYB6B}",
+    "\\left[a\\right]_{JJILE0}\\to\\left[\\right]_{74TJ47}\\left|\\right|\\left[\\right]_{QLHRFX}",
+    "\\left[a\\right]_{MRYB6B}\\to\\left[\\right]_{YO4KUC}\\left|\\right|\\left[\\right]_{NZ4C92}",
+    "\\left[a\\right]_{1URL0U}\\to\\left[\\right]_{SSDUNV}\\left|\\right|\\left[\\right]_{V7703V}",
+    "\\left[a\\right]_{SSDUNV}\\to\\left[\\right]_{FZV8EH}\\left|\\right|\\left[\\right]_{500BT7}",
+    "\\left[a\\right]_{V7703V}\\to\\left[\\right]_{276D6W}\\left|\\right|\\left[\\right]_{C5WG5F}",
+    "\\left[a\\right]_{UIOFS3}\\to\\left[\\right]_{65HSJ7}\\left|\\right|\\left[\\right]_{BAPQCB}",
+    "\\left[a\\right]_{65HSJ7}\\to\\left[\\right]_{ZJBIF3}\\left|\\right|\\left[\\right]_{1BD6L1}",
+    "\\left[a\\right]_{ZJBIF3}\\to\\left[\\right]_{VYSM4H}\\left|\\right|\\left[\\right]_{9JI8LR}",
+    "\\left[a\\right]_{VYSM4H}\\to\\left[\\right]_{W3E778}\\left|\\right|\\left[\\right]_{7DGUSC}",
+    "\\left[a\\right]_{9JI8LR}\\to\\left[\\right]_{3H28PL}\\left|\\right|\\left[\\right]_{LJXJWF}",
+    "\\left[a\\right]_{1BD6L1}\\to\\left[\\right]_{OKW1LH}\\left|\\right|\\left[\\right]_{8JHY6V}",
+    "\\left[a\\right]_{OKW1LH}\\to\\left[\\right]_{LB2CKK}\\left|\\right|\\left[\\right]_{KG9GID}",
+    "\\left[a\\right]_{8JHY6V}\\to\\left[\\right]_{M4X4ZU}\\left|\\right|\\left[\\right]_{KDP4S8}",
+    "\\left[a\\right]_{BAPQCB}\\to\\left[\\right]_{IZXM9P}\\left|\\right|\\left[\\right]_{HISLZZ}",
+    "\\left[a\\right]_{IZXM9P}\\to\\left[\\right]_{D41XPJ}\\left|\\right|\\left[\\right]_{1ACAGX}",
+    "\\left[a\\right]_{D41XPJ}\\to\\left[\\right]_{8TS0RZ}\\left|\\right|\\left[\\right]_{GTH734}",
+    "\\left[a\\right]_{1ACAGX}\\to\\left[\\right]_{2I5T6B}\\left|\\right|\\left[\\right]_{QX0D7X}",
+    "\\left[a\\right]_{HISLZZ}\\to\\left[\\right]_{94ISF5}\\left|\\right|\\left[\\right]_{KWCJH4}",
+    "\\left[a\\right]_{94ISF5}\\to\\left[\\right]_{806AY8}\\left|\\right|\\left[\\right]_{H5LWWB}",
+    "\\left[a\\right]_{KWCJH4}\\to\\left[\\right]_{4VEI60}\\left|\\right|\\left[\\right]_{OHCNTR}",
+    "\\left[a\\right]_{BHGW6V}\\to\\left[\\right]_{R54I4G}\\left|\\right|\\left[\\right]_{LRO6N3}",
+    "\\left[a\\right]_{R54I4G}\\to\\left[\\right]_{TDRRS7}\\left|\\right|\\left[\\right]_{1IETED}",
+    "\\left[a\\right]_{TDRRS7}\\to\\left[\\right]_{GOE4E5}\\left|\\right|\\left[\\right]_{VKY5BQ}",
+    "\\left[a\\right]_{GOE4E5}\\to\\left[\\right]_{DCGQGU}\\left|\\right|\\left[\\right]_{WEECMW}",
+    "\\left[a\\right]_{DCGQGU}\\to\\left[\\right]_{08QYU2}\\left|\\right|\\left[\\right]_{4YKXX4}",
+    "\\left[a\\right]_{WEECMW}\\to\\left[\\right]_{0UQMXE}\\left|\\right|\\left[\\right]_{74BYMP}",
+    "\\left[a\\right]_{VKY5BQ}\\to\\left[\\right]_{5GWTH0}\\left|\\right|\\left[\\right]_{YJLNAR}",
+    "\\left[a\\right]_{5GWTH0}\\to\\left[\\right]_{Z5WNR6}\\left|\\right|\\left[\\right]_{FX00FD}",
+    "\\left[a\\right]_{YJLNAR}\\to\\left[\\right]_{QKR5H4}\\left|\\right|\\left[\\right]_{I1LU0R}",
+    "\\left[a\\right]_{1IETED}\\to\\left[\\right]_{RTESSF}\\left|\\right|\\left[\\right]_{BYTHBB}",
+    "\\left[a\\right]_{RTESSF}\\to\\left[\\right]_{ZN6N9R}\\left|\\right|\\left[\\right]_{TXO1HR}",
+    "\\left[a\\right]_{ZN6N9R}\\to\\left[\\right]_{DRBYPM}\\left|\\right|\\left[\\right]_{PVC9NJ}",
+    "\\left[a\\right]_{TXO1HR}\\to\\left[\\right]_{IGKDRB}\\left|\\right|\\left[\\right]_{67ECQ5}",
+    "\\left[a\\right]_{BYTHBB}\\to\\left[\\right]_{WPWIBU}\\left|\\right|\\left[\\right]_{IEFUZP}",
+    "\\left[a\\right]_{WPWIBU}\\to\\left[\\right]_{PF32NA}\\left|\\right|\\left[\\right]_{MU800O}",
+    "\\left[a\\right]_{IEFUZP}\\to\\left[\\right]_{00FGE7}\\left|\\right|\\left[\\right]_{6XAPNK}",
+    "\\left[a\\right]_{LRO6N3}\\to\\left[\\right]_{FQKMVN}\\left|\\right|\\left[\\right]_{KYXAPW}",
+    "\\left[a\\right]_{FQKMVN}\\to\\left[\\right]_{NCU0HH}\\left|\\right|\\left[\\right]_{84OZ44}",
+    "\\left[a\\right]_{NCU0HH}\\to\\left[\\right]_{9HKVDI}\\left|\\right|\\left[\\right]_{5SG0GH}",
+    "\\left[a\\right]_{9HKVDI}\\to\\left[\\right]_{QTVW90}\\left|\\right|\\left[\\right]_{0DU5UA}",
+    "\\left[a\\right]_{5SG0GH}\\to\\left[\\right]_{D8XMDO}\\left|\\right|\\left[\\right]_{RKDOAK}",
+    "\\left[a\\right]_{84OZ44}\\to\\left[\\right]_{KGM21Z}\\left|\\right|\\left[\\right]_{0VMJBW}",
+    "\\left[a\\right]_{KGM21Z}\\to\\left[\\right]_{Z0C26F}\\left|\\right|\\left[\\right]_{FMHSYG}",
+    "\\left[a\\right]_{0VMJBW}\\to\\left[\\right]_{2NTGL8}\\left|\\right|\\left[\\right]_{GWP28R}",
+    "\\left[a\\right]_{KYXAPW}\\to\\left[\\right]_{XRUCZQ}\\left|\\right|\\left[\\right]_{RKD7CG}",
+    "\\left[a\\right]_{XRUCZQ}\\to\\left[\\right]_{3G6KAZ}\\left|\\right|\\left[\\right]_{J6FYVX}",
+    "\\left[a\\right]_{3G6KAZ}\\to\\left[\\right]_{U4H01Z}\\left|\\right|\\left[\\right]_{JDVP87}",
+    "\\left[a\\right]_{J6FYVX}\\to\\left[\\right]_{MX58WZ}\\left|\\right|\\left[\\right]_{Q2T4Z1}",
+    "\\left[a\\right]_{RKD7CG}\\to\\left[\\right]_{CK0S3H}\\left|\\right|\\left[\\right]_{34IFK3}",
+    "\\left[a\\right]_{CK0S3H}\\to\\left[\\right]_{19VJX3}\\left|\\right|\\left[\\right]_{3957H8}",
+    "\\left[a\\right]_{34IFK3}\\to\\left[\\right]_{8KRLQS}\\left|\\right|\\left[\\right]_{WUI6JB}"
+  ]
+}

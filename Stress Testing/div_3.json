@@ -1,0 +1,53 @@
+{
+  "neurons": [
+    {
+      "id": "in",
+      "type": "input",
+      "content": "111",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "div",
+      "content": 0,
+      "rules": [],
+      "type": "regular",
+      "position": {
+        "x": 250,
+        "y": 0
+      }
+    },
+    {
+      "id": "out",
+      "type": "output",
+      "content": "",
+      "position": {
+        "x": 500,
+        "y": 0
+      }
+    }
+  ],
+  "synapses": [
+    {
+      "from": "in",
+      "to": "div",
+      "weight": 1
+    },
+    {
+      "from": "div",
+      "to": "out",
+      "weight": 1
+    }
+  ],
+  "rule_dict": [
+    "\\left[a\\right]_{div}\\to\\left[\\right]_{65SEJ2}\\left|\\right|\\left[\\right]_{6G5M8J}",
+    "\\left[a\\right]_{65SEJ2}\\to\\left[\\right]_{206RAL}\\left|\\right|\\left[\\right]_{RJRK54}",
+    "\\left[a\\right]_{206RAL}\\to\\left[\\right]_{UM5D0H}\\left|\\right|\\left[\\right]_{MB8856}",
+    "\\left[a\\right]_{RJRK54}\\to\\left[\\right]_{XV6XWY}\\left|\\right|\\left[\\right]_{N6OX1W}",
+    "\\left[a\\right]_{6G5M8J}\\to\\left[\\right]_{8BI1NP}\\left|\\right|\\left[\\right]_{JIQ6FN}",
+    "\\left[a\\right]_{8BI1NP}\\to\\left[\\right]_{5LXQXM}\\left|\\right|\\left[\\right]_{E4ADYR}",
+    "\\left[a\\right]_{JIQ6FN}\\to\\left[\\right]_{LXJHV8}\\left|\\right|\\left[\\right]_{KJAQPX}"
+  ]
+}

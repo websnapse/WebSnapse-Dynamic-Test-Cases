@@ -1,0 +1,61 @@
+{
+  "neurons": [
+    {
+      "id": "in",
+      "type": "input",
+      "content": "1111",
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "div",
+      "content": 0,
+      "rules": [],
+      "type": "regular",
+      "position": {
+        "x": 250,
+        "y": 0
+      }
+    },
+    {
+      "id": "out",
+      "type": "output",
+      "content": "",
+      "position": {
+        "x": 500,
+        "y": 0
+      }
+    }
+  ],
+  "synapses": [
+    {
+      "from": "in",
+      "to": "div",
+      "weight": 1
+    },
+    {
+      "from": "div",
+      "to": "out",
+      "weight": 1
+    }
+  ],
+  "rule_dict": [
+    "\\left[a\\right]_{div}\\to\\left[\\right]_{YP3IYJ}\\left|\\right|\\left[\\right]_{VLN5QG}",
+    "\\left[a\\right]_{YP3IYJ}\\to\\left[\\right]_{GTRFGX}\\left|\\right|\\left[\\right]_{W3QDQC}",
+    "\\left[a\\right]_{GTRFGX}\\to\\left[\\right]_{Q28SKI}\\left|\\right|\\left[\\right]_{9HOBQS}",
+    "\\left[a\\right]_{Q28SKI}\\to\\left[\\right]_{LCFQ09}\\left|\\right|\\left[\\right]_{64URBF}",
+    "\\left[a\\right]_{9HOBQS}\\to\\left[\\right]_{XZHKQS}\\left|\\right|\\left[\\right]_{4NPAWI}",
+    "\\left[a\\right]_{W3QDQC}\\to\\left[\\right]_{BYCJV4}\\left|\\right|\\left[\\right]_{JW5ZJK}",
+    "\\left[a\\right]_{BYCJV4}\\to\\left[\\right]_{EHV9ZF}\\left|\\right|\\left[\\right]_{053E9Q}",
+    "\\left[a\\right]_{JW5ZJK}\\to\\left[\\right]_{LS1M5B}\\left|\\right|\\left[\\right]_{73FQQX}",
+    "\\left[a\\right]_{VLN5QG}\\to\\left[\\right]_{I6V11H}\\left|\\right|\\left[\\right]_{YKH2BI}",
+    "\\left[a\\right]_{I6V11H}\\to\\left[\\right]_{6W42KP}\\left|\\right|\\left[\\right]_{5621D3}",
+    "\\left[a\\right]_{6W42KP}\\to\\left[\\right]_{8LYA4L}\\left|\\right|\\left[\\right]_{AXVTJO}",
+    "\\left[a\\right]_{5621D3}\\to\\left[\\right]_{8W0D86}\\left|\\right|\\left[\\right]_{RN5PCY}",
+    "\\left[a\\right]_{YKH2BI}\\to\\left[\\right]_{T4HIP6}\\left|\\right|\\left[\\right]_{ELQPOM}",
+    "\\left[a\\right]_{T4HIP6}\\to\\left[\\right]_{3QFKF6}\\left|\\right|\\left[\\right]_{LMG2VX}",
+    "\\left[a\\right]_{ELQPOM}\\to\\left[\\right]_{IJ5572}\\left|\\right|\\left[\\right]_{ETYPI3}"
+  ]
+}
